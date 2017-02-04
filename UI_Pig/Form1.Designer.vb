@@ -22,130 +22,154 @@ Partial Class Form1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.txtJugador = New System.Windows.Forms.TextBox()
+        Me.txtPC = New System.Windows.Forms.TextBox()
+        Me.txtDado = New System.Windows.Forms.TextBox()
+        Me.txtAcumulado = New System.Windows.Forms.TextBox()
+        Me.btnTirar = New System.Windows.Forms.Button()
+        Me.btnFinTurno = New System.Windows.Forms.Button()
+        Me.lblJugador = New System.Windows.Forms.Label()
+        Me.lblPC = New System.Windows.Forms.Label()
+        Me.lblAcumulado = New System.Windows.Forms.Label()
+        Me.lblDado = New System.Windows.Forms.Label()
+        Me.lblPigDice = New System.Windows.Forms.Label()
+        Me.lblTurnos = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
-        'TextBox1
+        'txtJugador
         '
-        Me.TextBox1.Location = New System.Drawing.Point(13, 13)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 0
+        Me.txtJugador.Location = New System.Drawing.Point(15, 70)
+        Me.txtJugador.Name = "txtJugador"
+        Me.txtJugador.Size = New System.Drawing.Size(100, 20)
+        Me.txtJugador.TabIndex = 0
         '
-        'TextBox2
+        'txtPC
         '
-        Me.TextBox2.Location = New System.Drawing.Point(172, 13)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox2.TabIndex = 1
+        Me.txtPC.Location = New System.Drawing.Point(172, 70)
+        Me.txtPC.Name = "txtPC"
+        Me.txtPC.Size = New System.Drawing.Size(100, 20)
+        Me.txtPC.TabIndex = 1
         '
-        'TextBox3
+        'txtDado
         '
-        Me.TextBox3.Location = New System.Drawing.Point(95, 148)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox3.TabIndex = 2
+        Me.txtDado.Location = New System.Drawing.Point(95, 148)
+        Me.txtDado.Name = "txtDado"
+        Me.txtDado.Size = New System.Drawing.Size(100, 20)
+        Me.txtDado.TabIndex = 2
         '
-        'TextBox4
+        'txtAcumulado
         '
-        Me.TextBox4.Location = New System.Drawing.Point(95, 109)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox4.TabIndex = 3
+        Me.txtAcumulado.Location = New System.Drawing.Point(95, 109)
+        Me.txtAcumulado.Name = "txtAcumulado"
+        Me.txtAcumulado.Size = New System.Drawing.Size(100, 20)
+        Me.txtAcumulado.TabIndex = 3
         '
-        'Button1
+        'btnTirar
         '
-        Me.Button1.Location = New System.Drawing.Point(38, 206)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 4
-        Me.Button1.Text = "Tirar"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnTirar.Location = New System.Drawing.Point(38, 206)
+        Me.btnTirar.Name = "btnTirar"
+        Me.btnTirar.Size = New System.Drawing.Size(75, 23)
+        Me.btnTirar.TabIndex = 4
+        Me.btnTirar.Text = "Tirar"
+        Me.btnTirar.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnFinTurno
         '
-        Me.Button2.Location = New System.Drawing.Point(172, 206)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 5
-        Me.Button2.Text = "Fin Turno"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnFinTurno.Location = New System.Drawing.Point(172, 206)
+        Me.btnFinTurno.Name = "btnFinTurno"
+        Me.btnFinTurno.Size = New System.Drawing.Size(75, 23)
+        Me.btnFinTurno.TabIndex = 5
+        Me.btnFinTurno.Text = "Fin Turno"
+        Me.btnFinTurno.UseVisualStyleBackColor = True
         '
-        'Label1
+        'lblJugador
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(12, 36)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(20, 13)
-        Me.Label1.TabIndex = 6
-        Me.Label1.Text = "Yo"
+        Me.lblJugador.AutoSize = True
+        Me.lblJugador.Location = New System.Drawing.Point(12, 54)
+        Me.lblJugador.Name = "lblJugador"
+        Me.lblJugador.Size = New System.Drawing.Size(45, 13)
+        Me.lblJugador.TabIndex = 6
+        Me.lblJugador.Text = "Jugador"
         '
-        'Label2
+        'lblPC
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(169, 36)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(21, 13)
-        Me.Label2.TabIndex = 7
-        Me.Label2.Text = "PC"
+        Me.lblPC.AutoSize = True
+        Me.lblPC.Location = New System.Drawing.Point(169, 54)
+        Me.lblPC.Name = "lblPC"
+        Me.lblPC.Size = New System.Drawing.Size(21, 13)
+        Me.lblPC.TabIndex = 7
+        Me.lblPC.Text = "PC"
         '
-        'Label3
+        'lblAcumulado
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(92, 93)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(60, 13)
-        Me.Label3.TabIndex = 8
-        Me.Label3.Text = "Acumulado"
+        Me.lblAcumulado.AutoSize = True
+        Me.lblAcumulado.Location = New System.Drawing.Point(92, 93)
+        Me.lblAcumulado.Name = "lblAcumulado"
+        Me.lblAcumulado.Size = New System.Drawing.Size(60, 13)
+        Me.lblAcumulado.TabIndex = 8
+        Me.lblAcumulado.Text = "Acumulado"
         '
-        'Label4
+        'lblDado
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(92, 132)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(33, 13)
-        Me.Label4.TabIndex = 9
-        Me.Label4.Text = "Dado"
+        Me.lblDado.AutoSize = True
+        Me.lblDado.Location = New System.Drawing.Point(92, 132)
+        Me.lblDado.Name = "lblDado"
+        Me.lblDado.Size = New System.Drawing.Size(33, 13)
+        Me.lblDado.TabIndex = 9
+        Me.lblDado.Text = "Dado"
+        '
+        'lblPigDice
+        '
+        Me.lblPigDice.AutoSize = True
+        Me.lblPigDice.Font = New System.Drawing.Font("Goudy Stout", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPigDice.Location = New System.Drawing.Point(85, 13)
+        Me.lblPigDice.Name = "lblPigDice"
+        Me.lblPigDice.Size = New System.Drawing.Size(113, 18)
+        Me.lblPigDice.TabIndex = 10
+        Me.lblPigDice.Text = "Pig Dice"
+        '
+        'lblTurnos
+        '
+        Me.lblTurnos.AutoSize = True
+        Me.lblTurnos.Location = New System.Drawing.Point(272, 239)
+        Me.lblTurnos.Name = "lblTurnos"
+        Me.lblTurnos.Size = New System.Drawing.Size(0, 13)
+        Me.lblTurnos.TabIndex = 11
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 261)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.lblTurnos)
+        Me.Controls.Add(Me.lblPigDice)
+        Me.Controls.Add(Me.lblDado)
+        Me.Controls.Add(Me.lblAcumulado)
+        Me.Controls.Add(Me.lblPC)
+        Me.Controls.Add(Me.lblJugador)
+        Me.Controls.Add(Me.btnFinTurno)
+        Me.Controls.Add(Me.btnTirar)
+        Me.Controls.Add(Me.txtAcumulado)
+        Me.Controls.Add(Me.txtDado)
+        Me.Controls.Add(Me.txtPC)
+        Me.Controls.Add(Me.txtJugador)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "Pig Dice"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
+    Friend WithEvents txtJugador As TextBox
+    Friend WithEvents txtPC As TextBox
+    Friend WithEvents txtDado As TextBox
+    Friend WithEvents txtAcumulado As TextBox
+    Friend WithEvents btnTirar As Button
+    Friend WithEvents btnFinTurno As Button
+    Friend WithEvents lblJugador As Label
+    Friend WithEvents lblPC As Label
+    Friend WithEvents lblAcumulado As Label
+    Friend WithEvents lblDado As Label
+    Friend WithEvents lblPigDice As Label
+    Friend WithEvents lblTurnos As Label
 End Class
